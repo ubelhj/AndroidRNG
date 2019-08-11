@@ -40,10 +40,11 @@
     <EditText
         android:id="@+id/minimum"
         android:layout_width="0dp"
-        android:layout_height="40dp"
+        android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/minimum"
         android:inputType="number"
@@ -52,12 +53,12 @@
         app:layout_constraintEnd_toStartOf="@+id/textView3"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        android:autofillHints="" tools:targetApi="o"/>
+        tools:targetApi="o" />
 
     <EditText
         android:id="@+id/maximum"
         android:layout_width="0dp"
-        android:layout_height="45dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
@@ -65,22 +66,23 @@
         android:layout_marginBottom="8dp"
         android:ems="10"
         android:hint="@string/maximum"
+        android:importantForAutofill="no"
         android:inputType="number"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView3"
-        android:importantForAutofill="no" tools:targetApi="o"/>
+        tools:targetApi="o" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="50dp"
-        android:layout_height="41dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="20dp"
         android:text="@string/to"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/button"

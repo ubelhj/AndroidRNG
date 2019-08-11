@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 //                System.out.println(maxInput);
 
                 int minInt = Integer.parseInt(minInput);
-                int maxInt = Integer.parseInt(maxInput);
+                int maxInt = Integer.parseInt(maxInput) + 1;
 
 //                System.out.println(minInt);
 //                System.out.println(maxInt);
@@ -46,7 +46,13 @@ public class MainActivity extends AppCompatActivity {
                     return;
                 }
 
-                Integer value = rand.nextInt(maxInt - minInt) + minInt;
+                Integer value;
+
+                if (maxInt == minInt) {
+                    value = maxInt;
+                } else {
+                    value = rand.nextInt(maxInt - minInt) + minInt;
+                }
 
                 System.out.println(value);
 
